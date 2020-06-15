@@ -39,3 +39,6 @@ SRCREV_qtlocation = "02a21217a9706402802f38c646797be8eccb86e4"
 SRCREV_qtlocation-mapboxgl = "d3101bbc22edd41c9036ea487d4a71eabd97823d"
 
 SRCREV_FORMAT = "qtlocation_qtlocation-mapboxgl"
+
+inherit features_check
+REQUIRED_DISTRO_FEATURES ?= "x11 opengl"
