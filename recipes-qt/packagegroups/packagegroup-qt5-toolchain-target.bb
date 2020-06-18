@@ -110,3 +110,6 @@ RRECOMMENDS_${PN} += " \
 
 RRECOMMENDS_${PN}_remove_toolchain-clang_riscv32 = "qttools-plugins"
 RRECOMMENDS_${PN}_remove_toolchain-clang_riscv64 = "qttools-plugins"
+
+inherit features_check
+REQUIRED_DISTRO_FEATURES ?= "x11 opengl"
